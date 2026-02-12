@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varan Singh Rohila | AI Engineer & Data Scientist</title>
+    <meta name="description" content="Portfolio of Varan Singh Rohila - Senior Data Scientist and AI Engineer specializing in Agentic AI, LLMs, and Computer Vision.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for FontAwesome, user might need to replace kit code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    
+    <nav class="navbar">
+        <div class="logo">&lt;Varan /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+<!-- ... -->
+
+
+    <section id="hero">
+        <div class="hero-content">
+            <p class="greeting">Hello, I am</p>
+            <h1 class="glitch" data-text="Varan Singh Rohila">Varan Singh Rohila</h1>
+            <h2 class="subtitle">Building <span id="typing-text"></span></h2>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">01. About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    I am a Senior Data Scientist and AI Engineer with over 6 years of experience in building intelligent systems. 
+                    My passion lies in bridging the gap between theoretical AI research and scalable production solutions.
+                </p>
+                <p>
+                    Currently, I focus on <strong>Agentic AI</strong>, <strong>Large Language Models (LLMs)</strong>, and <strong>Computer Vision</strong>. 
+                    I have a proven track record of optimizing complex workflows and driving innovation in the FinTech and Healthcare sectors.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>6+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h3>20+</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-card">
+                    <h3>4</h3>
+                    <p>Research Papers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="container">
+        <h2 class="section-title">02. My Journey</h2>
+        <div class="timeline" id="timeline-container">
+            <!-- Timeline items injected via JS -->
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">03. Projects</h2>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Agentic AI">Agentic AI</button>
+            <button class="filter-btn" data-filter="CV">CV</button>
+            <button class="filter-btn" data-filter="NLP">NLP</button>
+            <button class="filter-btn" data-filter="Data Science">Data Science</button>
+        </div>
+        <div class="projects-grid" id="projects-container">
+            <!-- Projects injected via JS -->
+        </div>
+    </section>
+
+    <section id="publications" class="container">
+        <h2 class="section-title">04. Publications</h2>
+        <div class="publications-grid">
+            <div class="pub-card">
+                <div class="pub-icon"><i class="fas fa-book-open"></i></div>
+                <div class="pub-content">
+                    <h3><a href="https://ieeexplore.ieee.org/abstract/document/9500414" target="_blank" style="color:var(--text-primary); text-decoration:none;">Towards Framework for Edge Computing Assisted COVID-19 Detection</a> <i class="fas fa-external-link-alt" style="font-size:0.7em; color:var(--text-secondary);"></i></h3>
+                    <p class="pub-meta">IEEE ICC 2021</p>
+                    <p>Novel framework for rapid COVID-19 detection using Edge Computing.</p>
+                </div>
+            </div>
+            <div class="pub-card">
+                <div class="pub-icon"><i class="fas fa-journal-whills"></i></div>
+                <div class="pub-content">
+                    <h3><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7903153/pdf/main.pdf" target="_blank" style="color:var(--text-primary); text-decoration:none;">Deep Learning Assisted COVID-19 Detection using full CT-scans</a> <i class="fas fa-external-link-alt" style="font-size:0.7em; color:var(--text-secondary);"></i></h3>
+                    <p class="pub-meta">Elsevier Internet of Things Journal (2021)</p>
+                    <p>94.9% accuracy in detecting COVID-19 severity using ResNet-101.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 class="section-title">05. Tech Stack</h2>
+        <div class="skills-wrapper">
+            <div class="skill-category">
+                <h3>Core AI/ML</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>TensorFlow</span>
+                    <span>Scikit-learn</span>
+                    <span>LangChain</span>
+                    <span>OpenAI API</span>
+                    <span>HuggingFace</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Data Engineering</h3>
+                <div class="skill-tags">
+                    <span>SQL</span>
+                    <span>Spark</span>
+                    <span>AWS Glue</span>
+                    <span>Kafka</span>
+                    <span>Airflow</span>
+                    <span>ChromaDB</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>infrastructure</h3>
+                <div class="skill-tags">
+                    <span>AWS</span>
+                    <span>Docker</span>
+                    <span>Kubernetes</span>
+                    <span>FastAPI</span>
+                    <span>Terraform</span>
+                    <span>CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">06. Get In Touch</h2>
+        <div class="contact-content">
+            <p>I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <a href="mailto:varansinghrohila@gmail.com" class="btn primary big-btn">Say Hello</a>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/varan-singh-rohila" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/VaranRohila" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:varansinghrohila@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed & Built by Varan Singh Rohila</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
